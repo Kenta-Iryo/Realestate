@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
   $('.fv__slider').slick({
     autoplay: true,
     infinite: true,
