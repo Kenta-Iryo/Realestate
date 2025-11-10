@@ -295,7 +295,8 @@ body {
 
 // お知らせ
 .news {
-  padding: 80px 0;
+  padding-top: 78px;
+  padding-bottom: 80px;
   background-color: rgba(77, 150, 0, 0.102);
 }
 
@@ -320,7 +321,7 @@ body {
 }
 
 .news__lists {
-  padding: 10px 20px 5px 20px;
+  padding: 14px 20px 5px 20px;
   background-color: #fff;
 }
 
@@ -335,7 +336,7 @@ body {
 
   time {
     font-size: 1.6rem;
-    line-height: calc(33/16);
+    // line-height: calc(33/16);
   }
 
   p {
@@ -359,7 +360,7 @@ body {
 }
 
 .blog__lists {
-  padding: 10px 20px 5px 20px;
+  padding: 14px 20px 5px 21px;
   background-color: #fff;
 }
 
@@ -374,7 +375,7 @@ body {
 
   time {
     font-size: 1.6rem;
-    line-height: calc(33/16);
+    // line-height: calc(33/16);
   }
 
   p {
@@ -408,7 +409,7 @@ body {
 
 // company
 .company {
-  padding: 80px 0;
+  padding: 84px 0;
 }
 
 .company__contents {}
@@ -431,7 +432,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 49px 5px 42px 220px;
+  padding: 49px 5px 42px 221px;
   background-color: #4d9600;
   color: #fff;
 }
@@ -439,19 +440,19 @@ body {
 .company__name {
   font-size: 2rem;
   line-height: calc(33/20);
-  margin-bottom: 0.7rem;
+  margin-bottom: 8px;
 }
 
 .company__address {
   font-size: 1.6rem;
   line-height: calc(25/16);
-  margin-bottom: 1.2rem;
+  margin-bottom: 11px;
 }
 
 .company__tel {
   font-size: 1.6rem;
   line-height: calc(25/16);
-  margin-bottom: 1.9rem;
+  margin-bottom: 16px;
 }
 
 .company__number {
@@ -462,23 +463,52 @@ body {
 .company__email {
   font-size: 1.6rem;
   line-height: calc(25/16);
+
+  a {
+    margin-left: 17px;
+  }
 }
 
 
 // contact
 .contact {
-  padding: 80px 0;
+  padding: 77px 0;
   background-color: rgba(77, 150, 0, 0.102);
+}
+
+.contact__title {
+  // padding-left: 1rem;
+
+  h2 {
+    color: #4d9600;
+    font-size: 3rem;
+    margin-bottom: 6px;
+    line-height: calc(33/30);
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
+
+  p {
+    color: #000;
+    font-size: 2rem;
+    line-height: calc(33/20);
+    letter-spacing: 0.3em;
+    margin-bottom: 34px;
+    text-align: center;
+  }
 }
 
 .contact__sub-title {
   font-size: 2rem;
   line-height: calc(33/20);
-  margin-bottom: 7rem;
-  text-align: center;
+  padding-left: 61px;
+  margin-bottom: 75px;
 }
 
-.contact__form {}
+.contact__form {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .form {
   width: 100%;
@@ -486,23 +516,28 @@ body {
 
 // 名前フォーム
 .contact__name {
-  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
+  margin-bottom: 50px;
+  // align-items: center;
 
   .contact__left {
     width: 170px;
+    height: 50px;
+    padding-top: 5px;
     font-size: 2rem;
     line-height: calc(33/20);
   }
 
   .contact__right {
+    width: 100%;
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: calc(25/16);
+
     input {
       width: 630px;
       height: 5rem;
-      font-size: 1.6rem;
       padding: 1rem 2rem;
-      line-height: calc(25/16);
       background-color: #fff;
       text-align: left;
     }
@@ -511,40 +546,87 @@ body {
 
 // 性別フォーム
 .contact__gender {
-  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
+  margin-bottom: 30px;
+  // align-items: center;
 
   .contact__left {
-    width: 40px;
+    width: 170px;
+    height: 50px;
     font-size: 2rem;
     line-height: calc(33/20);
   }
 
   .contact__right {
-    label {}
+    width: 100%;
+    flex: 1;
+    font-size: 1.8rem;
+    line-height: calc(25/18);
+  }
 
-    input {}
+  .contact__radio {
+    display: flex;
+    gap: 70px;
+    margin-left: 3px;
+
+    input {
+      display: none;
+    }
+  }
+
+  span {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  span::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  span::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #000;
   }
 }
 
 // メールフォーム
 .contact__mail {
-  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
+  margin-bottom: 50px;
+  // align-items: center;
 
 
   .contact__left {
     width: 170px;
+    height: 50px;
     font-size: 2rem;
     line-height: calc(33/20);
+    padding-top: 9px;
   }
 
   .contact__right {
+    width: 100%;
+    flex: 1;
+    line-height: calc(25/18);
+
     input {
       width: 630px;
-      height: 5rem;
+      height: 50px;
       font-size: 1.6rem;
       line-height: calc(25/16);
       padding: 1rem 2rem;
@@ -556,18 +638,24 @@ body {
 
 // 問い合わせ種別
 .contact__type {
-  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
+  margin-bottom: 51px;
+  // align-items: center;
 
 
   .contact__left {
     width: 170px;
+    height: 50px;
     font-size: 2rem;
     line-height: calc(33/20);
+    padding-top: 9px;
   }
 
   .contact__right {
+    width: 100%;
+    flex: 1;
+    line-height: calc(25/18);
+
     .select__type {
       position: relative;
     }
@@ -596,7 +684,7 @@ body {
     height: 200px;
     font-size: 1.6rem;
     padding: 1.6rem 2rem;
-    margin: 1rem 0 5rem 0;
+    margin: 10px 0 50px 0;
     background-color: #fff;
   }
 }
@@ -613,28 +701,29 @@ body {
 
 .contact__question-list {
   display: flex;
+  margin: 9px 0 0 21px;
   column-gap: 6.1rem;
   row-gap: 1.5rem;
   flex-wrap: wrap;
-  margin-left: 2rem;
-  padding-bottom: 1.5rem;
 }
 
 .question__checkbox {
   width: 18%;
 
   label {
-    padding-left: 2rem;
+    display: flex;
+    white-space: nowrap;
 
     input {
+      display: grid;
       position: relative;
     }
 
     input::before {
       position: absolute;
       content: "";
-      left: -6px;
-      top: 28%;
+      left: -20px;
+      top: 50%;
       transform: translateY(-50%);
       width: 2rem;
       height: 2rem;
@@ -644,6 +733,7 @@ body {
     span {
       font-size: 1.8rem;
       line-height: calc(25/18);
+      padding-left: 2rem;
     }
   }
 }
@@ -694,17 +784,19 @@ body {
 
 // フッター
 .footer {
-  padding-top: 8rem;
+  padding-top: 83px;
 }
 
 .footer__content {}
 
 .footer__title {
+  margin: 0 auto;
   font-size: 2rem;
   line-height: calc(33/20);
-  padding-bottom: 2.8rem;
-  margin-bottom: 2.8rem;
+  padding-bottom: 2.7rem;
+  margin-bottom: 2.9rem;
   border-bottom: 1px solid #000;
+  max-width: 722px;
   text-align: center;
 }
 
@@ -715,7 +807,7 @@ body {
   justify-content: center;
   font-size: 1.8rem;
   line-height: calc(33/18);
-  gap: 5rem;
+  gap: 5.1rem;
 }
 
 .footer__nav-list {}
@@ -725,8 +817,8 @@ body {
 .sns__button {}
 
 .footer__nav-sns {
-  margin-top: 2.6rem;
-  margin-bottom: 7rem;
+  margin-top: 2.9rem;
+  margin-bottom: 7.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -740,7 +832,8 @@ body {
 .footer__copyright {
   font-size: 2rem;
   line-height: calc(33/20);
-  padding: 30px 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: #4d9600;
   color: #fff;
   text-align: center;
