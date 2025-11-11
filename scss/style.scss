@@ -12,6 +12,11 @@ body {
   letter-spacing: 0;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -55,6 +60,10 @@ img {
   transition: all 0.5s ease;
   position: fixed;
   color: #fff;
+
+  @media screen and (max-width:767px) {
+    height: 50px;
+  }
 }
 
 .header__inner {
@@ -66,6 +75,11 @@ img {
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width:767px) {
+    height: 50px;
+    padding-left: 20px;
+  }
 }
 
 .header__title {
@@ -74,34 +88,95 @@ img {
   padding-top: 5px;
   line-height: calc(33/20);
   letter-spacing: normal;
+
+  @media screen and (max-width:767px) {
+    padding-top: 0;
+  }
 }
 
-// .hamburger__menu {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 72px;
-//   height: 50px;
-//   background-color: #fff;
-//   display: none;
-// }
+.hamburger__menu {
+  width: 72px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+
+  @media screen and (max-width:767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 32px;
+    height: 4px;
+    background: #4d9600;
+  }
+
+  span:nth-of-type(1) {
+    top: 25%;
+  }
+
+  span:nth-of-type(3) {
+    top: 75%;
+  }
+}
+
+.header__nav-lists {
+  display: flex;
+  align-items: center;
+}
 
 .header__nav-list {
   font-size: 1.8rem;
   line-height: calc(33/18);
   gap: 31px;
   display: flex;
+
+  @media screen and (max-width:767px) {
+    display: block;
+    position: fixed;
+    width: 80%;
+    height: 348px;
+    top: 50%;
+    left: 120%;
+    overflow: hidden;
+    color: #fff;
+    background-color: #4d9600;
+    text-align: left;
+    list-style: none;
+    z-index: 9999;
+  }
 }
 
 .header__nav-link {
   font-size: 1.8rem;
   line-height: calc(33/18);
+
+  @media screen and (max-width:767px) {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
 }
 
 
 // ファーストビュー
 .fv {
   position: relative;
+
+  @media screen and (max-width:767px) {}
+}
+
+.fv__slider {
+  @media screen and (max-width:767px) {}
 }
 
 .fv__content {
@@ -109,6 +184,11 @@ img {
   top: 51.3%;
   left: 50.6%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width:767px) {
+    top: 51.4%;
+    left: 51.5%;
+  }
 }
 
 .fv__text {
@@ -119,15 +199,16 @@ img {
   color: #fff;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
+  white-space: nowrap;
 
-  .sp {
-    display: none;
+  @media screen and (max-width:767px) {
+    font-size: 3rem;
+    line-height: calc(60/30);
   }
 }
 
 
 // アバウト
-
 .about__container {
   position: relative;
 }
@@ -139,25 +220,47 @@ img {
   transform: translate(-50%, -36%);
   writing-mode: vertical-rl;
 
-  h2 {
-    font-size: 3rem;
-    margin-left: 4.2rem;
-    line-height: 1.18;
-    letter-spacing: 0.18em;
-  }
-
-  p {
-    font-size: 1.8rem;
-    line-height: 2.66;
-    letter-spacing: 0.39em;
+  @media screen and (max-width:767px) {
+    display: flex;
+    align-items: center;
+    top: 33.4%;
+    left: 44%;
   }
 }
+
+.about__text h2 {
+  font-size: 3rem;
+  margin-left: 4.2rem;
+  line-height: 1.18;
+  letter-spacing: 0.18em;
+
+  @media screen and (max-width:767px) {
+    font-size: 2.5rem;
+  }
+}
+
+.about__text p {
+  font-size: 1.8rem;
+  line-height: 2.66;
+  letter-spacing: 0.39em;
+
+  @media screen and (max-width:767px) {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+  }
+}
+
 
 
 // サービス
 .service {
   padding: 80px 0;
   background-color: rgba(77, 150, 0, 0.102);
+
+  @media screen and (max-width:767px) {
+    padding-top: 50px;
+    overflow: hidden;
+  }
 }
 
 .service__contents {
@@ -165,6 +268,10 @@ img {
   row-gap: 80px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width:767px) {
+    margin-top: 39px;
+  }
 }
 
 .service__content {
@@ -174,6 +281,8 @@ img {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+
+  @media screen and (max-width:767px) {}
 }
 
 .service__content:nth-child(2) {
@@ -184,6 +293,8 @@ img {
   width: 65.2%;
   padding-bottom: 51px;
   z-index: 100;
+
+  @media screen and (max-width:767px) {}
 
   p {
     font-size: 1.6rem;
@@ -273,6 +384,10 @@ img {
   padding-top: 78px;
   padding-bottom: 80px;
   background-color: rgba(77, 150, 0, 0.102);
+
+  @media screen and (max-width:767px) {
+    overflow: hidden;
+  }
 }
 
 .news__contents {
