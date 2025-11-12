@@ -205,10 +205,18 @@ img {
     font-size: 3rem;
     line-height: calc(60/30);
   }
+
+  .sp {
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+  }
 }
 
 
 // アバウト
+.about {}
+
 .about__container {
   position: relative;
 }
@@ -219,12 +227,14 @@ img {
   left: 36%;
   transform: translate(-50%, -36%);
   writing-mode: vertical-rl;
+  white-space: nowrap;
 
   @media screen and (max-width:767px) {
     display: flex;
     align-items: center;
-    top: 33.4%;
-    left: 44%;
+    top: 38.7%;
+    left: 50%;
+    column-gap: 24px;
   }
 }
 
@@ -236,6 +246,9 @@ img {
 
   @media screen and (max-width:767px) {
     font-size: 2.5rem;
+    line-height: 1.19;
+    letter-spacing: 0.2em;
+    margin: 0;
   }
 }
 
@@ -246,7 +259,8 @@ img {
 
   @media screen and (max-width:767px) {
     font-size: 1.6rem;
-    margin-top: 2.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.25em;
   }
 }
 
@@ -365,17 +379,48 @@ img {
 //施工事例
 .works {
   padding: 80px 0 97px;
+
+  @media screen and (max-width:767px) {
+    padding-top: 50px;
+    padding-bottom: 42px;
+  }
+}
+
+.works__contents {
+  @media screen and (max-width:767px) {
+    margin-top: 38px;
+  }
 }
 
 .works__items {
   display: flex;
   gap: 4rem;
+
+  @media screen and (max-width:767px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+  }
+}
+
+.works__item {
+  @media screen and (max-width:767px) {}
 }
 
 .works__text {
   font-size: 1.6rem;
   line-height: calc(25/16);
   margin-top: 19px;
+
+  @media screen and (max-width:767px) {
+    margin-top: 9px;
+  }
+
+  .pc {
+    @media screen and (max-width:767px) {
+      display: none;
+    }
+  }
 }
 
 
