@@ -48,6 +48,10 @@ img {
     letter-spacing: 0.3em;
     margin-bottom: 68px;
     text-align: center;
+
+    @media screen and (max-width:767px) {
+      margin-bottom: 38px;
+    }
   }
 }
 
@@ -293,10 +297,13 @@ img {
   max-width: 920px;
   width: 100%;
   margin: 0auto;
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+  }
 }
 
 .service__content:nth-child(2) {
@@ -307,15 +314,21 @@ img {
   width: 65.2%;
   padding-bottom: 51px;
   z-index: 100;
+  position: relative;
 
   @media screen and (max-width:767px) {
     width: 100%;
+    padding-bottom: 6px;
   }
 
   p {
     font-size: 1.6rem;
     line-height: calc(25/16);
     margin-top: 19px;
+
+    @media screen and (max-width:767px) {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -323,21 +336,31 @@ img {
   width: 54.3%;
   background-color: #4d9600;
   color: #fff;
-  padding: 50px 5px 42px 220px;
+  padding: 50px 5px 42px 23.9%;
   z-index: 10;
   position: absolute;
   bottom: 0;
   right: 0;
 
   @media screen and (max-width:767px) {
+    width: 100%;
     padding: 0;
     position: static;
+    padding: 20px 20px 12px 20px;
   }
 
   h3 {
     font-size: 2.5rem;
     line-height: calc(33/25);
     margin-bottom: 1.7rem;
+
+    @media screen and (max-width:767px) {
+      font-size: 2rem;
+    }
+
+    .pc {
+      display: none;
+    }
   }
 
   p {
@@ -350,9 +373,11 @@ img {
   width: 65.2%;
   padding-bottom: 51px;
   z-index: 100;
+  position: relative;
 
   @media screen and (max-width:767px) {
     width: 100%;
+    padding-bottom: 6px;
   }
 
   p {
@@ -360,6 +385,11 @@ img {
     line-height: calc(25/16);
     margin-top: 19px;
     text-align: end;
+
+    @media screen and (max-width:767px) {
+      margin-top: 5px;
+      text-align: left;
+    }
   }
 }
 
@@ -367,21 +397,27 @@ img {
   width: 54.3%;
   background-color: #4d9600;
   color: #fff;
-  padding: 50px 185px 42px 40px;
+  padding: 50px 20.1% 42px 40px;
   z-index: 10;
   position: absolute;
   bottom: 0;
   left: 0;
 
   @media screen and (max-width:767px) {
+    width: 100%;
     padding: 0;
     position: static;
+    padding: 20px 20px 12px 20px;
   }
 
   h3 {
     font-size: 2.5rem;
     line-height: calc(33/25);
     margin-bottom: 1.7rem;
+
+    @media screen and (max-width:767px) {
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -454,8 +490,8 @@ img {
 .news__contents {
   display: flex;
   max-width: 920px;
-  gap: 6rem;
-
+  gap: 60px;
+  ;
 }
 
 // ニュースセクション
