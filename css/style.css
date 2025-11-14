@@ -300,6 +300,7 @@ img {
 @media screen and (max-width: 767px) {
   .service {
     padding-top: 50px;
+    padding-bottom: 44px;
     overflow: hidden;
   }
 }
@@ -317,7 +318,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .service__contents {
-    row-gap: 50px;
+    row-gap: 46px;
     margin-top: 39px;
   }
 }
@@ -388,7 +389,7 @@ img {
     width: 100%;
     padding: 0;
     position: static;
-    padding: 20px 20px 12px 20px;
+    padding: 17px 20px 14px 20px;
   }
 }
 .service__text h3 {
@@ -449,7 +450,7 @@ img {
     width: 100%;
     padding: 0;
     position: static;
-    padding: 20px 20px 12px 20px;
+    padding: 18px 20px 13px 20px;
   }
 }
 .reverce__text h3 {
@@ -525,6 +526,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .news {
+    padding-top: 50px;
     overflow: hidden;
   }
 }
@@ -535,6 +537,15 @@ img {
   display: flex;
   max-width: 920px;
   gap: 60px;
+}
+@media screen and (max-width: 767px) {
+  .news__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 55px;
+  }
 }
 
 .news__content {
@@ -553,6 +564,11 @@ img {
   padding: 14px 20px 5px 20px;
   background-color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .news__lists {
+    padding: 15px 20px 0;
+  }
+}
 
 .news__list {
   border-bottom: 1px solid #55A500;
@@ -566,6 +582,13 @@ img {
   -webkit-column-gap: 18%;
      -moz-column-gap: 18%;
           column-gap: 18%;
+}
+@media screen and (max-width: 767px) {
+  .news__item {
+    -webkit-column-gap: 7%;
+       -moz-column-gap: 7%;
+            column-gap: 7%;
+  }
 }
 .news__item time {
   font-size: 1.6rem;
@@ -594,6 +617,11 @@ img {
   padding: 14px 20px 5px 21px;
   background-color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .blog__lists {
+    padding: 15px 20px 0;
+  }
+}
 
 .blog__list {
   border-bottom: 1px solid #55A500;
@@ -607,6 +635,13 @@ img {
   -webkit-column-gap: 18%;
      -moz-column-gap: 18%;
           column-gap: 18%;
+}
+@media screen and (max-width: 767px) {
+  .blog__item {
+    -webkit-column-gap: 7%;
+       -moz-column-gap: 7%;
+            column-gap: 7%;
+  }
 }
 .blog__item time {
   font-size: 1.6rem;
