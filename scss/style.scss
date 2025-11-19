@@ -633,6 +633,10 @@ img {
   padding-bottom: 6.2rem;
   position: relative;
   display: flex;
+
+  @media screen and(max-width:767px) {
+    flex-direction: column;
+  }
 }
 
 .company__map {
@@ -650,9 +654,14 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 49px 5px 42px 221px;
+  padding: 49px 5px 42px 68.8%;
   background-color: #4d9600;
   color: #fff;
+
+  @media screen and (max-width:767px) {
+    width: 100%;
+    position: static;
+  }
 }
 
 .company__name {
