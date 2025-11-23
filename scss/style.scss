@@ -637,6 +637,13 @@ img {
     font-size: 1.8rem;
     line-height: calc(25/18);
     flex: 1;
+
+    @media screen and (max-width:768px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
   }
 }
 
@@ -717,6 +724,10 @@ img {
   font-size: 1.6rem;
   line-height: calc(25/16);
   margin-bottom: 11px;
+
+  @media screen and (max-width:768px) {
+    font-size: 1.4rem;
+  }
 }
 
 .company__tel {

@@ -708,6 +708,14 @@ img {
       -ms-flex: 1;
           flex: 1;
 }
+@media screen and (max-width: 768px) {
+  .blog__item p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
 
 .more {
   display: block;
@@ -793,6 +801,11 @@ img {
   font-size: 1.6rem;
   line-height: 1.5625;
   margin-bottom: 11px;
+}
+@media screen and (max-width: 768px) {
+  .company__address {
+    font-size: 1.4rem;
+  }
 }
 
 .company__tel {
