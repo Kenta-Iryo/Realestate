@@ -784,6 +784,10 @@ img {
   line-height: calc(33/20);
   padding-left: 61px;
   margin-bottom: 75px;
+
+  @media screen and (max-width:768px) {
+    padding-left: 0;
+  }
 }
 
 .contact__form {
@@ -820,6 +824,10 @@ img {
       padding: 1rem 2rem;
       background-color: #fff;
       text-align: left;
+
+      @media screen and (max-width:768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -907,6 +915,10 @@ img {
       line-height: calc(25/16);
       padding: 1rem 2rem;
       background-color: #fff;
+
+      @media screen and (max-width:768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -941,6 +953,10 @@ img {
       padding: 1rem 2rem;
       line-height: calc(25/18);
       background-color: #fff;
+
+      @media screen and (max-width:768px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -1079,6 +1095,11 @@ img {
   font-size: 1.8rem;
   line-height: calc(33/18);
   gap: 5.1rem;
+
+  @media screen and (max-width:768px) {
+  font-size: 1.6rem;
+  gap: 5rem;
+  }
 }
 
 .footer__nav-sns {

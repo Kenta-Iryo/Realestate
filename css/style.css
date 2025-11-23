@@ -858,6 +858,11 @@ img {
   padding-left: 61px;
   margin-bottom: 75px;
 }
+@media screen and (max-width: 768px) {
+  .contact__sub-title {
+    padding-left: 0;
+  }
+}
 
 .contact__form {
   max-width: 800px;
@@ -894,6 +899,11 @@ img {
   padding: 1rem 2rem;
   background-color: #fff;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .contact__name .contact__right input {
+    width: 100%;
+  }
 }
 
 .contact__gender {
@@ -981,6 +991,11 @@ img {
   padding: 1rem 2rem;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .contact__mail .contact__right input {
+    width: 100%;
+  }
+}
 
 .contact__type {
   display: -webkit-box;
@@ -1011,6 +1026,11 @@ img {
   padding: 1rem 2rem;
   line-height: 1.3888888889;
   background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .contact__type .contact__right select {
+    width: 100%;
+  }
 }
 
 .contact__content label {
@@ -1142,6 +1162,12 @@ img {
   font-size: 1.8rem;
   line-height: 1.8333333333;
   gap: 5.1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-lists {
+    font-size: 1.6rem;
+    gap: 5rem;
+  }
 }
 
 .footer__nav-sns {
