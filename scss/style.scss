@@ -648,7 +648,7 @@ img {
     line-height: calc(25/18);
     flex: 1;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:900px) {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -684,7 +684,7 @@ img {
   padding: 84px 0;
 
   @media screen and (max-width:767px) {
-    padding: 50px 0;
+    padding: 52px 0;
     overflow: hidden;
   }
 }
@@ -743,6 +743,10 @@ img {
   @media screen and (max-width:768px) {
     font-size: 1.4rem;
   }
+
+  @media screen and (max-width:767px) {
+    font-size: 1.6rem;
+  }
 }
 
 .company__tel {
@@ -776,11 +780,11 @@ img {
   }
 }
 
-.contact__title {
-  padding-left: 11px;
+.contact__main-title {
+  padding-left: 12px;
 
   @media screen and (max-width:767px) {
-    padding-left: 0;
+    padding-left: 12px;
   }
 
   h2 {
@@ -810,7 +814,7 @@ img {
 
   @media screen and (max-width:768px) {
     padding-left: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -839,6 +843,10 @@ img {
     padding-top: 5px;
     font-size: 2rem;
     line-height: calc(33/20);
+
+    @media screen and (max-width:767px) {
+      height: auto;
+    }
   }
 
   .contact__right {
@@ -866,8 +874,7 @@ img {
   margin-bottom: 30px;
 
   @media screen and (max-width:767px) {
-    flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 0.3rem;
   }
 
   .contact__left {
@@ -935,7 +942,7 @@ img {
 
   @media screen and (max-width:767px) {
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .contact__left {
@@ -944,6 +951,10 @@ img {
     font-size: 2rem;
     line-height: calc(33/20);
     padding-top: 9px;
+
+    @media screen and (max-width:767px) {
+      height: auto;
+    }
   }
 
   .contact__right {
@@ -982,6 +993,10 @@ img {
     font-size: 2rem;
     line-height: calc(33/20);
     padding-top: 9px;
+
+    @media screen and (max-width:767px) {
+      height: auto;
+    }
   }
 
   .contact__right {
@@ -1024,7 +1039,8 @@ img {
     background-color: #fff;
 
     @media screen and (max-width:767px) {
-      margin-bottom: 3rem;
+      margin-top: 0;
+      margin-bottom: 2.2rem;
     }
   }
 }
@@ -1045,7 +1061,7 @@ img {
 
 .contact__question-list {
   display: flex;
-  margin: 9px 0 0 21px;
+  margin: 8px 0 0 21px;
   column-gap: 6.1rem;
   row-gap: 1.5rem;
   flex-wrap: wrap;
@@ -1090,6 +1106,7 @@ img {
 // 個人情報保護方針フォーム
 .contact__privacy-policy {
   margin-bottom: 8rem;
+
   @media screen and (max-width:767px) {
     margin-bottom: 5rem;
   }
@@ -1159,8 +1176,12 @@ img {
   gap: 5.1rem;
 
   @media screen and (max-width:768px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     gap: 5rem;
+  }
+
+  @media screen and (max-width:767px) {
+    font-size: 1.6rem;
   }
 }
 
@@ -1182,4 +1203,12 @@ img {
   color: #fff;
   text-align: center;
   font-weight: 500;
+
+  @media screen and (max-width:767px) {
+    padding: 21px 30px;
+  }
+}
+
+.ib-span {
+  display: inline-block;
 }
