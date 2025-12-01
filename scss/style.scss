@@ -188,7 +188,6 @@ img {
   }
 }
 
-
 // ファーストビュー
 .fv {
   position: relative;
@@ -232,6 +231,27 @@ img {
       display: none;
     }
   }
+}
+
+
+// トップに戻る
+.page__top {
+  position: fixed;
+  background: #4d9600;
+  width: 68px;
+  height: 68px;
+  right: 60px;
+  bottom: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.icon__to-top {
+  width: 24px;
+  height: 15px;
 }
 
 
@@ -536,6 +556,50 @@ img {
     }
   }
 }
+
+// モーダル
+// .modal {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   z-index: 10000;
+//   overflow: auto;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   transition: all 0.2s ease-in-out;
+// }
+
+// .modal__content {
+//   position: relative;
+//   background-color: #fff;
+//   overflow: auto;
+//   padding: 15px 15px 0;
+//   width: 90%;
+//   max-width: 450px;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// .modal__close {
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   top: 2px;
+//   right: 2px;
+// }
+
+// .modal__container {}
+
+// .modal__img {}
+
+// .modal__container-text {
+//   font-size: 1.6rem;
+//   line-height: calc(25/16);
+//   padding-top: 9px;
+//   padding-bottom: 6px;
+// }
 
 
 // お知らせ
@@ -1146,6 +1210,13 @@ img {
     line-height: calc(33/20);
     color: #fff;
     background-color: #4d9600;
+    border: 1px solid #4d9600;
+    transition: 0.5s;
+  }
+
+  input:hover {
+    color: #4d9600;
+    background-color: #fff;
   }
 }
 

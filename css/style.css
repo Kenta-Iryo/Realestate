@@ -252,6 +252,31 @@ img {
   }
 }
 
+.page__top {
+  position: fixed;
+  background: #4d9600;
+  width: 68px;
+  height: 68px;
+  right: 60px;
+  bottom: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+.icon__to-top {
+  width: 24px;
+  height: 15px;
+}
+
 .about__container {
   position: relative;
 }
@@ -1239,6 +1264,13 @@ img {
   line-height: 1.65;
   color: #fff;
   background-color: #4d9600;
+  border: 1px solid #4d9600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.privacy__button input:hover {
+  color: #4d9600;
+  background-color: #fff;
 }
 
 .footer {
