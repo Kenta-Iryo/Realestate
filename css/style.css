@@ -620,6 +620,69 @@ img {
   }
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.modal__container {
+  position: relative;
+  max-width: 450px;
+  padding: 15px 15px 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.modal__close-button {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  right: 2px;
+}
+
+.modal__close-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal__content-text {
+  font-size: 1.6rem;
+  line-height: 1.5625;
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+
 .news {
   padding-top: 78px;
   padding-bottom: 80px;
@@ -1031,7 +1094,7 @@ img {
   border-radius: 50%;
   background-color: #fff;
 }
-.contact__gender span::after {
+.contact__gender .contact__radio input:checked + span::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -1076,6 +1139,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   line-height: 1.3888888889;
+  position: relative;
 }
 .contact__mail .contact__right input {
   width: 630px;

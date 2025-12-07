@@ -557,50 +557,71 @@ img {
   }
 }
 
+
 // モーダル
-// .modal {
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   left: 0;
-//   top: 0;
-//   z-index: 10000;
-//   overflow: auto;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   transition: all 0.2s ease-in-out;
-// }
+.modal {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
 
-// .modal__content {
-//   position: relative;
-//   background-color: #fff;
-//   overflow: auto;
-//   padding: 15px 15px 0;
-//   width: 90%;
-//   max-width: 450px;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
+.modal__container {
+  position: relative;
+  max-width: 450px;
+  padding: 15px 15px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
 
-// .modal__close {
-//   position: absolute;
-//   width: 15px;
-//   height: 15px;
-//   top: 2px;
-//   right: 2px;
-// }
+.modal__close-button {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  right: 2px;
+}
 
-// .modal__container {}
+.modal__close-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 
-// .modal__img {}
+.modal__close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
-// .modal__container-text {
-//   font-size: 1.6rem;
-//   line-height: calc(25/16);
-//   padding-top: 9px;
-//   padding-bottom: 6px;
-// }
+.modal__content {}
 
+.modal__content-img {}
+
+.modal__content-text {
+  font-size: 1.6rem;
+  line-height: calc(25/16);
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
 
 // お知らせ
 .news {
@@ -986,7 +1007,7 @@ img {
     background-color: #fff;
   }
 
-  span::after {
+  .contact__radio input:checked+span::after {
     position: absolute;
     content: "";
     top: 50%;
@@ -1024,6 +1045,7 @@ img {
   .contact__right {
     flex: 1;
     line-height: calc(25/18);
+    position: relative;
 
     input {
       width: 630px;
@@ -1064,9 +1086,10 @@ img {
   }
 
   .contact__right {
-
     flex: 1;
     line-height: calc(25/18);
+    // position: relative;
+
 
     .select__type {
       position: relative;
