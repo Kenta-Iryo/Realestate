@@ -271,6 +271,11 @@ img {
           justify-content: center;
   z-index: 999;
 }
+@media screen and (max-width: 767px) {
+  .page__top {
+    display: none;
+  }
+}
 
 .icon__to-top {
   width: 24px;

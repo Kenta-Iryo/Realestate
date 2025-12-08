@@ -247,6 +247,10 @@ img {
   align-items: center;
   justify-content: center;
   z-index: 999;
+
+  @media screen and (max-width:767px) {
+    display: none;
+  }
 }
 
 .icon__to-top {
@@ -1088,8 +1092,6 @@ img {
   .contact__right {
     flex: 1;
     line-height: calc(25/18);
-    // position: relative;
-
 
     .select__type {
       position: relative;
